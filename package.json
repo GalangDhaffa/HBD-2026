@@ -1,0 +1,16 @@
+{
+  "name": "ily",
+  "version": "1.0.0",
+  "description": "Birthday Gift",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./input.css -o ./output.css --watch",
+    "build": "tailwindcss -i ./input.css -o ./output.css --minify"
+  },
+  "keywords": [],
+  "author": "Galang",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

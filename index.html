@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Sayang 💝</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" type="image/jpg" href="resource/IMG/ICON.png">
+    <style>
+      body {
+        font-family: "Englebert", cursive;
+      }
+      /* Animasi untuk Popup */
+      @keyframes zoomIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .animate-zoom-in {
+        animation: zoomIn 0.3s ease-out forwards;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-br from-purple-400 via-purple-300 to-indigo-200 min-h-screen font-sans text-slate-800"
+  >
+    <div class="h-screen flex flex-col items-center justify-center relative">
+      <h1
+        class="text-5xl md:text-7xl font-bold text-white drop-shadow-md text-center px-4 animate-pulse"
+      >
+        HELLOWW SAYANGGG
+      </h1>
+      <p class="text-white mt-4 text-lg opacity-90">Scroll ke bawah yaa 👇</p>
+      <div class="absolute bottom-10 animate-bounce text-white text-3xl">⬇</div>
+    </div>
+
+    <div
+      class="min-h-screen bg-white/90 rounded-t-3xl shadow-[0_-10px_40px_rgba(0,0,0,0.1)] p-8 md:p-20"
+    >
+      <div class="max-w-2xl mx-auto space-y-8">
+        <h2
+          class="text-3xl font-bold text-purple-600 border-b-2 border-purple-200 pb-2"
+        >
+          Special For You ❤️
+        </h2>
+
+        <p class="text-lg leading-relaxed text-slate-600 text-justify">
+          Hai cantik! Selamat ulang tahun yang ke-21 yaa... Maaf ya kalau kado
+          web ini sederhana, tapi aku buat ini coding sendiri khusus buat kamu.
+        </p>
+
+        <div
+          class="bg-purple-50 p-6 rounded-xl border-l-4 border-purple-400 italic"
+        >
+          <h3 class="font-bold text-purple-600 mb-2 not-italic">
+            Terima Kasih Banyak...
+          </h3>
+          <p class="text-slate-700 leading-relaxed text-justify">
+            "Makasih ya udah selalu ada buat aku, udah sabar ngadepin sifat aku
+            yang kadang nyebelin. Makasih udah jadi support system terbaik pas
+            aku lagi capek kuliah."
+          </p>
+        </div>
+
+        <div class="space-y-4 text-slate-600">
+          <p class="text-lg leading-relaxed text-justify">
+            Di umur kamu yang baru ini, aku cuma minta satu sama Allah, semoga
+            kamu selalu bahagia. Kejar terus mimpi kamu dan jangan pernah nyerah
+            di tengah jalan, aku yakin kamu bisa, aku bangga sama kamuu dan aku
+            banggaaa banget bisa sama kamu, tapiii karna sekarang udah ada aku
+            sekarang kamu kalo lagi sedih, capek, apapun itu, aku ada buat kamu.
+          </p>
+          <p class="text-lg leading-relaxed text-justify">
+            Jangan lupa istirahat juga ya, jangan terlalu diforsir kerjanya.
+            Kesehatan kamu itu nomor satu buat aku, samaa jangann begadanggg
+            terusss yaa cantikkk.
+          </p>
+          <p class="text-lg leading-relaxed text-justify">
+            Oh iya, coba liat deh kenangan kita di bawah ini... Klik kartunya
+            ya!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-4">
+          <div
+            onclick="bukaGaleri('first-date')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-1.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                First Date Kita 😍
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik disini sayang buat liat foto-fotonya langsung muncul
+                (Popup).
+              </p>
+            </div>
+          </div>
+
+          <div
+            onclick="bukaGaleri('my-ultah')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-2.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                Waktu aku Ultah 💝
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik juga bisa, nanti muncul popup yang sama tapi fotonya beda.
+              </p>
+            </div>
+          </div>
+
+          <div
+            onclick="bukaGaleri('movie-date')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-3.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                First Time Nobi 🍿
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik juga bisa, nanti muncul popup yang sama tapi fotonya beda.
+              </p>
+            </div>
+          </div>
+
+          <div
+            onclick="bukaGaleri('running-date')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-4.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                Lari Bareng 🏃‍♀️
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik juga bisa, nanti muncul popup yang sama tapi fotonya beda.
+              </p>
+            </div>
+          </div>
+
+          <div
+            onclick="bukaGaleri('blok-m-date')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-5.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                Blok M Date 🏃‍♀️
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik juga bisa, nanti muncul popup yang sama tapi fotonya beda.
+              </p>
+            </div>
+          </div>
+
+          <div
+            onclick="bukaGaleri('camping-date')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-6.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                Waktu kita Camping ⛺
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik juga bisa, nanti muncul popup yang sama tapi fotonya beda.
+              </p>
+            </div>
+          </div>
+
+          <div
+            onclick="bukaGaleri('double-date')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-7.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                Double Date 🤗
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik juga bisa, nanti muncul popup yang sama tapi fotonya beda.
+              </p>
+            </div>
+          </div>
+
+          <div
+            onclick="bukaGaleri('kebab-date')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-8.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                Waktu Beli Kebab 🥙
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik juga bisa, nanti muncul popup yang sama tapi fotonya beda.
+              </p>
+            </div>
+          </div>
+
+          <div
+            onclick="bukaGaleri('bogor-date')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-9.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                Waktu Kita ke Bogor 🏞️
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik juga bisa, nanti muncul popup yang sama tapi fotonya beda.
+              </p>
+            </div>
+          </div>
+
+          <div
+            onclick="bukaGaleri('rainy-date')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-10.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                Hujan-Hujanan 🌧️
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik juga bisa, nanti muncul popup yang sama tapi fotonya beda.
+              </p>
+            </div>
+          </div>
+
+          <div
+            onclick="bukaGaleri('sorry-time')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-11.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                Waktu Aku Minta Maaf 🙏
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik juga bisa, nanti muncul popup yang sama tapi fotonya beda.
+              </p>
+            </div>
+          </div>
+
+          <div
+            onclick="bukaGaleri('avatar-date')"
+            class="block group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition duration-300 border border-slate-100 cursor-pointer"
+          >
+            <div class="h-56 overflow-hidden relative">
+              <div
+                class="absolute inset-0 bg-purple-900/0 group-hover:bg-purple-900/20 transition duration-300 z-10"
+              ></div>
+              <img
+                src="resource/IMG/IMG-12.jpg"
+                alt="Sampul"
+                class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+              />
+            </div>
+            <div class="p-6">
+              <h3
+                class="font-bold text-xl text-purple-600 mb-2 group-hover:text-purple-800 transition"
+              >
+                Avatar Date 🧑‍🤝‍🧑
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Klik juga bisa, nanti muncul popup yang sama tapi fotonya beda.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p class="text-center text-purple-400 font-bold mt-12 animate-pulse">
+          I Love You 3000! ❤️
+        </p>
+      </div>
+    </div>
+
+    <div
+      id="modal-galeri"
+      class="hidden fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300"
+    >
+      <div
+        class="bg-white w-full max-w-6xl max-h-[90vh] overflow-y-auto rounded-3xl p-6 relative shadow-2xl animate-zoom-in"
+      >
+        <div
+          class="text-center mb-8 sticky top-0 bg-white/95 backdrop-blur-sm py-4 z-40 border-b border-slate-100 relative"
+        >
+          <button
+            onclick="tutupGaleri()"
+            class="absolute top-2 right-0 bg-red-100 text-red-500 hover:bg-red-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center font-bold transition duration-300 shadow-sm"
+          >
+            ✕
+          </button>
+
+          <h2 id="modal-judul" class="text-3xl font-bold text-purple-600">
+            Judul Momen
+          </h2>
+          <p id="modal-deskripsi" class="text-slate-500">Keterangan...</p>
+        </div>
+
+        <div
+          id="modal-grid-foto"
+          class="grid grid-cols-2 md:grid-cols-4 gap-4 pb-4"
+        ></div>
+      </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById("modal-galeri");
+      const judulModal = document.getElementById("modal-judul");
+      const deskripsiModal = document.getElementById("modal-deskripsi");
+      const containerFoto = document.getElementById("modal-grid-foto");
+
+      // === DATABASE FOTO ===
+      // Pastikan nama file gambarnya BENAR dan ADA di folder yang sesuai
+      const dataMomen = {
+        // 1st Momen
+        "first-date": {
+          judul: "First Date Kita 😍",
+          deskripsi: "Akhirnya bisa jalan bareng lagi setelah sekian lama...",
+          foto: [
+            "resource/IMG/IMG-1.jpg",
+            "resource/IMG/First-Date/IMG-FD-1.jpg",
+            "resource/IMG/First-Date/IMG-FD-2.jpg",
+            "resource/IMG/First-Date/IMG-FD-3.jpg",
+          ],
+        },
+        "my-ultah": {
+          judul: "Edisi Ulang Tahunku 🎂",
+          deskripsi:
+            "Kita ngegas ke tempat yang biasa kita makan, dan aku bawa kue ultah...",
+          foto: [
+            "resource/IMG/IMG-2.jpg",
+            "resource/IMG/Aku-Ultah/IMG-AU-1.jpg",
+            "resource/IMG/Aku-Ultah/IMG-AU-2.jpg",
+            "resource/IMG/Aku-Ultah/IMG-AU-3.jpg",
+          ],
+        },
+        "movie-date": {
+          judul: "Movie Date 🎬",
+          deskripsi: "Kita nonton film di bioskop, dan makan popcorn...",
+          foto: [
+            "resource/IMG/IMG-3.jpg",
+            "resource/IMG/Movie-Date/IMG-MD-1.jpg",
+            "resource/IMG/Movie-Date/IMG-MD-2.jpg",
+            "resource/IMG/Movie-Date/IMG-MD-3.jpg",
+          ],
+        },
+        "running-date": {
+          judul: "Running Date 🏃",
+          deskripsi: "Kita jalan-jalan di taman...",
+          foto: [
+            "resource/IMG/IMG-4.jpg",
+            "resource/IMG/Running-Date/IMG-RD-1.jpg",
+            "resource/IMG/Running-Date/IMG-RD-2.jpg",
+            "resource/IMG/Running-Date/IMG-RD-3.jpg",
+          ],
+        },
+        // 2nd Momen
+        "blok-m-date": {
+          judul: "Blok M Date 🛍️",
+          deskripsi: "Kita jalan-jalan dan makan di Blok M...",
+          foto: [
+            "resource/IMG/IMG-5.jpg",
+            "resource/IMG/Blok-M-Date/IMG-BMD-1.jpg",
+            "resource/IMG/Blok-M-Date/IMG-BMD-2.jpg",
+            "resource/IMG/Blok-M-Date/IMG-BMD-3.jpg",
+          ],
+        },
+        "camping-date": {
+          judul: "Camping Date ⛺",
+          deskripsi: "Kita camping bareng di alam terbuka...",
+          foto: [
+            "resource/IMG/IMG-6.jpg",
+            "resource/IMG/Camping-Date/IMG-CD-1.jpg",
+            "resource/IMG/Camping-Date/IMG-CD-2.jpg",
+            "resource/IMG/Camping-Date/IMG-CD-3.jpg",
+          ],
+        },
+        "double-date": {
+          judul: "Double Date 🍽️",
+          deskripsi: "Kita makan bareng pasangan lain...",
+          foto: [
+            "resource/IMG/IMG-7.jpg",
+            "resource/IMG/Double-Date/IMG-DD-1.jpg",
+            "resource/IMG/Double-Date/IMG-DD-2.jpg",
+            "resource/IMG/Double-Date/IMG-DD-3.jpg",
+          ],
+        },
+        "kebab-date": {
+          judul: "Kebab Date 🥙",
+          deskripsi: "Kita beli kebab di tempat favoritmu...",
+          foto: ["resource/IMG/IMG-8.jpg"],
+        },
+        // 3rd Momen
+        "bogor-date": {
+          judul: "Bogor Date 🌳",
+          deskripsi: "Kita jalan-jalan ke Bogor...",
+          foto: [
+            "resource/IMG/IMG-9.jpg",
+            "resource/IMG/Bogor-Date/IMG-BD-1.jpg",
+            "resource/IMG/Bogor-Date/IMG-BD-2.jpg",
+            "resource/IMG/Bogor-Date/IMG-BD-3.jpg",
+          ],
+        },
+        "rainy-date": {
+          judul: "Rainy Date 🌧️",
+          deskripsi: "Kita hujan-hujanan bareng...",
+          foto: [
+            "resource/IMG/IMG-10.jpg",
+            "resource/IMG/Rainy-Date/IMG-RD-1.jpg",
+            "resource/IMG/Rainy-Date/IMG-RD-2.jpg",
+            "resource/IMG/Rainy-Date/IMG-RD-3.jpg",
+          ],
+        },
+        "sorry-time": {
+          judul: "Sorry Time 🙏",
+          deskripsi: "Waktu aku minta maaf sama kamu...",
+          foto: [
+            "resource/IMG/IMG-11.jpg",
+            "resource/IMG/Sorry-Time/IMG-ST-11.jpg",
+            "resource/IMG/Sorry-Time/IMG-ST-22.jpg",
+            "resource/IMG/Sorry-Time/IMG-ST-33.jpg",
+          ],
+        },
+        "avatar-date": {
+          judul: "Avatar Date 🧑‍🤝‍🧑",
+          deskripsi: "Kita nonton Avatar bareng...",
+          foto: [
+            "resource/IMG/IMG-12.jpg",
+            "resource/IMG/Avatar-Date/IMG-AD-1.jpg",
+            "resource/IMG/Avatar-Date/IMG-AD-2.jpg",
+            "resource/IMG/Avatar-Date/IMG-AD-3.jpg",
+          ],
+        },
+      };
+
+      // Fungsi Buka Galeri
+      function bukaGaleri(idMomen) {
+        if (!dataMomen[idMomen]) {
+          alert("Data foto belum ada untuk: " + idMomen);
+          return;
+        }
+
+        const data = dataMomen[idMomen];
+
+        // Update Teks
+        judulModal.innerText = data.judul;
+        deskripsiModal.innerText = data.deskripsi;
+
+        // Reset Container
+        containerFoto.innerHTML = "";
+
+        // === LOGIKA TAMPILAN ===
+
+        if (data.foto.length === 1) {
+          // --- KASUS 1: FOTO CUMA SATU (JANGAN DI-CROP) ---
+          // Tampil utuh (h-auto) dan di tengah
+
+          containerFoto.className =
+            "flex justify-center items-center p-4 min-h-[300px]";
+
+          const divBaru = document.createElement("div");
+          // max-w-sm: Biar gak kegedean
+          divBaru.className =
+            "w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition duration-500 border-4 border-white";
+
+          // h-auto: Tinggi mengikuti gambar asli (GAK CROP)
+          divBaru.innerHTML = `<img src="${data.foto[0]}" class="w-full h-auto block" onerror="this.src='https://via.placeholder.com/300?text=Gambar+Rusak'">`;
+
+          containerFoto.appendChild(divBaru);
+        } else {
+          // --- KASUS 2: FOTO BANYAK (CROP BIAR RATA) ---
+          // Tampil Grid dan dipaksa sama tinggi (h-64)
+
+          containerFoto.className = "grid grid-cols-2 md:grid-cols-4 gap-4";
+
+          data.foto.forEach((src) => {
+            const divBaru = document.createElement("div");
+            divBaru.className =
+              "rounded-xl overflow-hidden shadow-md hover:shadow-xl transition hover:scale-105 duration-300";
+
+            // KUNCINYA DISINI:
+            // h-64: Paksa tingginya segini (sekitar 256px)
+            // object-cover: Potong otomatis bagian yang lebih biar pas kotak
+            divBaru.innerHTML = `<img src="${src}" class="w-full h-64 object-cover block" onerror="this.src='https://via.placeholder.com/300?text=Gambar+Rusak'">`;
+
+            containerFoto.appendChild(divBaru);
+          });
+        }
+
+        // Munculkan Modal
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+        document.body.style.overflow = "hidden";
+      }
+
+      function tutupGaleri() {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+        document.body.style.overflow = "auto";
+      }
+
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) tutupGaleri();
+      });
+    </script>
+  </body>
+</html>
