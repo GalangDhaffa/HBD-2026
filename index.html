@@ -443,13 +443,11 @@
       const deskripsiModal = document.getElementById("modal-deskripsi");
       const containerFoto = document.getElementById("modal-grid-foto");
 
-      // === DATABASE FOTO ===
-      // Pastikan nama file gambarnya BENAR dan ADA di folder yang sesuai
+     // === DATABASE FOTO ===
       const dataMomen = {
-        // 1st Momen
         "first-date": {
           judul: "First Date Kita 😍",
-          deskripsi: "Akhirnya bisa jalan bareng lagi setelah sekian lama...",
+          deskripsi: "Momen deg-degan pertama kali jalan sama kamu. Masih malu-malu tapi senengnya nggak habis-habis!",
           foto: [
             "resource/IMG/IMG-1.jpg",
             "resource/IMG/First-Date/IMG-FD-1.jpg",
@@ -459,8 +457,7 @@
         },
         "my-ultah": {
           judul: "Edisi Ulang Tahunku 🎂",
-          deskripsi:
-            "Kita ngegas ke tempat yang biasa kita makan, dan aku bawa kue ultah...",
+          deskripsi: "Makasih ya sayang udah kasih kejutan dan ngerayain bareng. Makan tempat biasa tapi rasanya jadi lebih spesial karena ada kamu.",
           foto: [
             "resource/IMG/IMG-2.jpg",
             "resource/IMG/Aku-Ultah/IMG-AU-1.jpg",
@@ -469,8 +466,8 @@
           ],
         },
         "movie-date": {
-          judul: "Movie Date 🎬",
-          deskripsi: "Kita nonton film di bioskop, dan makan popcorn...",
+          judul: "First Time Nobi 🍿",
+          deskripsi: "Ingat nggak film apa yang kita tonton? Fokusnya bukan ke layar, tapi ke tangan kita yang nggak sengaja bersentuhan pas ambil popcorn.",
           foto: [
             "resource/IMG/IMG-3.jpg",
             "resource/IMG/Movie-Date/IMG-MD-1.jpg",
@@ -479,8 +476,8 @@
           ],
         },
         "running-date": {
-          judul: "Running Date 🏃",
-          deskripsi: "Kita jalan-jalan di taman...",
+          judul: "Lari Bareng 🏃‍♀️",
+          deskripsi: "Niatnya biar sehat, tapi malah lebih banyak bercanda dan jajan dibanding larinya. Capeknya ilang kalau liat kamu senyum.",
           foto: [
             "resource/IMG/IMG-4.jpg",
             "resource/IMG/Running-Date/IMG-RD-1.jpg",
@@ -488,10 +485,9 @@
             "resource/IMG/Running-Date/IMG-RD-3.jpg",
           ],
         },
-        // 2nd Momen
         "blok-m-date": {
           judul: "Blok M Date 🛍️",
-          deskripsi: "Kita jalan-jalan dan makan di Blok M...",
+          deskripsi: "Jalan santai di Blok M, hunting foto, dan nyobain makanan enak. Salah satu hari favoritku bisa keliling kota sama kamu.",
           foto: [
             "resource/IMG/IMG-5.jpg",
             "resource/IMG/Blok-M-Date/IMG-BMD-1.jpg",
@@ -500,8 +496,8 @@
           ],
         },
         "camping-date": {
-          judul: "Camping Date ⛺",
-          deskripsi: "Kita camping bareng di alam terbuka...",
+          judul: "Waktu kita Camping ⛺",
+          deskripsi: "Dinginnya udara gunung nggak kerasa karena kita seru-seruan bareng. Pengalaman yang nggak bakal aku lupain selamanya.",
           foto: [
             "resource/IMG/IMG-6.jpg",
             "resource/IMG/Camping-Date/IMG-CD-1.jpg",
@@ -510,8 +506,8 @@
           ],
         },
         "double-date": {
-          judul: "Double Date 🍽️",
-          deskripsi: "Kita makan bareng pasangan lain...",
+          judul: "Double Date 🤗",
+          deskripsi: "Seru banget bisa kenalin kamu ke temen-temen. Makasih ya udah mau berbaur dan bikin suasananya makin asik!",
           foto: [
             "resource/IMG/IMG-7.jpg",
             "resource/IMG/Double-Date/IMG-DD-1.jpg",
@@ -520,14 +516,13 @@
           ],
         },
         "kebab-date": {
-          judul: "Kebab Date 🥙",
-          deskripsi: "Kita beli kebab di tempat favoritmu...",
+          judul: "Waktu Beli Kebab 🥙",
+          deskripsi: "Momen random tapi berkesan. Padahal cuma makan kebab di pinggir jalan, tapi rasanya bintang lima kalau makannya sama kamu.",
           foto: ["resource/IMG/IMG-8.jpg"],
         },
-        // 3rd Momen
         "bogor-date": {
-          judul: "Bogor Date 🌳",
-          deskripsi: "Kita jalan-jalan ke Bogor...",
+          judul: "Waktu Kita ke Bogor 🏞️",
+          deskripsi: "Liburan singkat ke kota hujan. Meskipun macet, yang penting kita dapet suasana baru dan banyak foto lucu buat kenangan.",
           foto: [
             "resource/IMG/IMG-9.jpg",
             "resource/IMG/Bogor-Date/IMG-BD-1.jpg",
@@ -536,8 +531,8 @@
           ],
         },
         "rainy-date": {
-          judul: "Rainy Date 🌧️",
-          deskripsi: "Kita hujan-hujanan bareng...",
+          judul: "Hujan-Hujanan 🌧️",
+          deskripsi: "Basah kuyup bareng! Bukannya kesel karena kehujanan, kita malah ketawa-ketawa. Dunia serasa milik berdua kalau udah begini.",
           foto: [
             "resource/IMG/IMG-10.jpg",
             "resource/IMG/Rainy-Date/IMG-RD-1.jpg",
@@ -546,8 +541,8 @@
           ],
         },
         "sorry-time": {
-          judul: "Sorry Time 🙏",
-          deskripsi: "Waktu aku minta maaf sama kamu...",
+          judul: "Waktu Aku Minta Maaf 🙏",
+          deskripsi: "Maaf ya kalau aku kadang keras kepala atau nyebelin. Makasih udah selalu kasih aku kesempatan buat jadi lebih baik lagi.",
           foto: [
             "resource/IMG/IMG-11.jpg",
             "resource/IMG/Sorry-Time/IMG-ST-11.jpg",
@@ -557,7 +552,7 @@
         },
         "avatar-date": {
           judul: "Avatar Date 🧑‍🤝‍🧑",
-          deskripsi: "Kita nonton Avatar bareng...",
+          deskripsi: "Nonton film yang durasinya lama banget tapi nggak kerasa karena duduknya di sebelah kamu. Can't wait for our next movies!",
           foto: [
             "resource/IMG/IMG-12.jpg",
             "resource/IMG/Avatar-Date/IMG-AD-1.jpg",
